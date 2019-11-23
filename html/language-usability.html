@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Language Usability &mdash; User Interfaces for Programming Languages</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/js-extra.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style-extra.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Overview" href="program-editors.html" />
+    <link rel="prev" title="Overview" href="notation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: linear-gradient( #009688, rgba(181, 71, 170, 1) )" >
+          
+<a href="index.html">User Interfaces for <br />Programming Languages</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Notation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="notation.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#history-of-mathematical-notation">History of Mathematical Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#cognitive-dimensions-of-notation">Cognitive Dimensions of Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#secondary-notation">Secondary Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#textual-notation">Textual Notation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notation.html#parsers">Parsers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="notation.html#parser-generators">Parser Generators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notation.html#syntax-errors">Syntax Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="notation.html#unparsers">Unparsers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#diagrams-and-graphical-notation">Diagrams and Graphical Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notation.html#customizable-notation">Customizable Notation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Language Usability</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#language-adoption">Language Adoption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usability-of-type-systems">Usability of Type Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#api-usability">API Usability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#program-comprehension">Program Comprehension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#domain-specific-languages">Domain-Specific Languages</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Program Editors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html#language-servers">Language Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html#structure-editors">Structure Editors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="program-editors.html#visual-programming-languages">Visual Programming Languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html#program-navigation">Program Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html#collaborative-editing">Collaborative Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program-editors.html#accessibility">Accessibility</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Programming Assistants</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="programming-assistants.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming-assistants.html#refactoring">Refactoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming-assistants.html#program-synthesis">Program Synthesis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="programming-assistants.html#code-completion">Code Completion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="programming-assistants.html#program-repair">Program Repair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming-assistants.html#interactive-proof-assistants">Interactive Proof Assistants</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Live Programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#repls">REPLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#data-analysis-environments">Data Analysis Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#debugging">Debugging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="live-programming.html#interactive-debuggers">Interactive Debuggers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="live-programming.html#program-visualization">Program Visualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#programming-by-demonstration">Programming by Demonstration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#direct-manipulation-programming">Direct Manipulation Programming</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="live-programming.html#graphical-user-interface-design">Graphical User Interface Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="live-programming.html#game-development">Game Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#live-coding">Live Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live-programming.html#programmable-physical-environments">Programmable Physical Environments</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Educational Technology</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="educational-technology.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="educational-technology.html#block-based-environments">Block-Based Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="educational-technology.html#feedback-generation">Feedback Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="educational-technology.html#tutoring-systems">Tutoring Systems</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html#conferences-and-workshops">Conferences and Workshops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html#online-communities">Online Communities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html#courses">Courses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html#research-groups">Research Groups</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">User Interfaces for Programming Languages</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon breadcrumb-home"></a>&raquo;</li>
+        
+      <li>Language Usability</li>
+
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/fplab/ui-for-pl/blob/master/src/language-usability.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>TODO: Overview</p>
+</div>
+<div class="section" id="language-adoption">
+<h1>Language Adoption<a class="headerlink" href="#language-adoption" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="usability-of-type-systems">
+<h1>Usability of Type Systems<a class="headerlink" href="#usability-of-type-systems" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="api-usability">
+<h1>API Usability<a class="headerlink" href="#api-usability" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="program-comprehension">
+<h1>Program Comprehension<a class="headerlink" href="#program-comprehension" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="domain-specific-languages">
+<h1>Domain-Specific Languages<a class="headerlink" href="#domain-specific-languages" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="program-editors.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="notation.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019. Original content licensed under the Creative Commons Attribution-ShareAlike 4.0 International license.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
