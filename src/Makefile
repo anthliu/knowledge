@@ -1,7 +1,7 @@
 SPHINX_SOURCES := index.rst conf.py
 RST_SOURCES := $(filter-out $(SPHINX_SOURCES),$(wildcard *.rst))
 MATHJAX_URL := https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML
-SPHINX_OUT_DIR := ../html
+SPHINX_OUT_DIR := ../docs
 PDF_OUT_FILE := $(SPHINX_OUT_DIR)/knowledge.pdf
 BUILD_DIR := ../build
 SPHINX_TEX_FILE := $(wildcard $(BUILD_DIR)/*.tex)
