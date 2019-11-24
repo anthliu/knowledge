@@ -60,7 +60,7 @@ html_theme_options = {
     'collapse_navigation': False,
     'sticky_navigation': True,
     'prev_next_buttons_location': 'bottom',
-    'style_nav_header_background': 'linear-gradient( #009688, rgba(181, 71, 170, 1) )',
+    'style_nav_header_background': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,177,164,1) 35%, rgba(177,0,255,1) 100%)',
     'display_version': False,
     # 'vcs_pageview_mode': 'edit'
 }
