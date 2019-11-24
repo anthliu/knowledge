@@ -8,13 +8,17 @@ Reinforcement Learning
 Human Supervision
 -----------------
 
-.. container:: bib-item
+COACH - Interactive learning from policy-dependent human feedback
+*****************************************************************
 
-  .. bibliography:: rl.bib
-    :filter: key == 'macglashan2017interactive'
+:cite:`macglashan2017interactive`
+https://arxiv.org/abs/1701.06049
 
-  COACH
 
-.. container:: hidden
+TAMER
+*****
 
-  :cite:`macglashan2017interactive`
+:cite:`warnell2018deep`
+https://arxiv.org/abs/1709.10163
+
+.. bibliography:: rl.bib
