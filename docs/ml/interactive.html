@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Machine Learning &mdash; Knowledge Dump</title>
+  <title>Interactive Learning &mdash; Knowledge Dump</title>
   
 
   
@@ -38,8 +38,8 @@
   <link rel="stylesheet" href="../_static/style-extra.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reinforcement Learning" href="rl.html" />
-    <link rel="prev" title="Knowledge Dump" href="../index.html" /> 
+    <link rel="next" title="Interpretability (ML)" href="xai.html" />
+    <link rel="prev" title="NLP" href="nlp.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -72,7 +72,7 @@
             
             
               <p class="caption"><span class="caption-text">Machine Learning</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="rl.html">Reinforcement Learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rl.html#human-supervision">Human Supervision</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="rl.html#reward-shaping">Reward Shaping</a></li>
@@ -112,10 +112,10 @@
 <li class="toctree-l2"><a class="reference internal" href="nlp.html#representations">Representations</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="interactive.html">Interactive Learning</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="interactive.html#active-learning">Active Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interactive.html#weak-supervision">Weak Supervision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interactive.html#unknown-unknowns">Unknown Unknowns</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interactive Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#active-learning">Active Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#weak-supervision">Weak Supervision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unknown-unknowns">Unknown Unknowns</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="xai.html">Interpretability (ML)</a><ul>
@@ -179,14 +179,16 @@
     
       <li><a href="../index.html" class="icon breadcrumb-home"></a>&raquo;</li>
         
-      <li>Machine Learning</li>
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo; </li>
+        
+      <li>Interactive Learning</li>
 
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/fplab/ui-for-pl/blob/master/src/ml/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/fplab/ui-for-pl/blob/master/src/ml/interactive.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -200,19 +202,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
+  <div class="section" id="interactive-learning">
+<h1>Interactive Learning<a class="headerlink" href="#interactive-learning" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="active-learning">
+<h2>Active Learning<a class="headerlink" href="#active-learning" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Big pre2010 survey <a class="reference external" href="http://burrsettles.com/pub/settles.activelearning.pdf">http://burrsettles.com/pub/settles.activelearning.pdf</a></p></li>
+<li><p>Active learning for CNNs <a class="reference external" href="https://openreview.net/pdf?id=H1aIuk-RW">https://openreview.net/pdf?id=H1aIuk-RW</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="weak-supervision">
+<h2>Weak Supervision<a class="headerlink" href="#weak-supervision" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Snorkel: Rapid Training Data Creation with Weak Supervision <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5951191/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5951191/</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="unknown-unknowns">
+<h2>Unknown Unknowns<a class="headerlink" href="#unknown-unknowns" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Identifying Unknown unknowns in the open world <a class="reference external" href="https://arxiv.org/abs/1610.09064">https://arxiv.org/abs/1610.09064</a></p></li>
+<li><p>Beat the machine <a class="reference external" href="http://pages.stern.nyu.edu/~fprovost/Papers/beat_the_machine_2011.pdf">http://pages.stern.nyu.edu/~fprovost/Papers/beat_the_machine_2011.pdf</a></p></li>
+<li><p>Coverage-based utility model for unknown unknowns <a class="reference external" href="http://aiweb.cs.washington.edu/ai/pubs/bansal-aaai18.pdf">http://aiweb.cs.washington.edu/ai/pubs/bansal-aaai18.pdf</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
 </div>
 
 
@@ -223,10 +235,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rl.html" class="btn btn-neutral float-right" title="Reinforcement Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="xai.html" class="btn btn-neutral float-right" title="Interpretability (ML)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="Knowledge Dump" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="nlp.html" class="btn btn-neutral float-left" title="NLP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

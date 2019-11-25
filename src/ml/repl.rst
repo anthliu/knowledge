@@ -25,11 +25,20 @@ https://arxiv.org/abs/1804.00891
 - This paper proposes *von Mises-Fisher* distribution as alternative to
   gaussian prior. (also uninformative prior).
 
-*X*-Shot Learning
------------------
+Non-parametric Learning
+-----------------------
 
 Infinite Mixture Prototypes for Few-Shot Learning
 *************************************************
 https://arxiv.org/abs/1902.04552
+
+- Non-parametric methods are good at few shot learning tasks, since they
+  more closely represent the data
+- Nearest neighbors and prototypical methods (such as GMM) are two ends of
+  spectrum in decision boundary complexity
+- Infinite mixture modeling are one method of spanning the above spectrum (Bayesian nonparametrics) :cite:`hjort2010bayesian` -- important for few-shot learning
+- Intuition - recognizing single characters is straightforward - characters
+  look alike, so can be recognized with a single "prototype".
+  Recognizing alphabets is trickier - unimodal distribution assumption is violated
 
 .. bibliography:: repl.bib

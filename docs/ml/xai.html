@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Machine Learning &mdash; Knowledge Dump</title>
+  <title>Interpretability (ML) &mdash; Knowledge Dump</title>
   
 
   
@@ -38,8 +38,8 @@
   <link rel="stylesheet" href="../_static/style-extra.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reinforcement Learning" href="rl.html" />
-    <link rel="prev" title="Knowledge Dump" href="../index.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="../hci/index.html" />
+    <link rel="prev" title="Interactive Learning" href="interactive.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -72,7 +72,7 @@
             
             
               <p class="caption"><span class="caption-text">Machine Learning</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="rl.html">Reinforcement Learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rl.html#human-supervision">Human Supervision</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="rl.html#reward-shaping">Reward Shaping</a></li>
@@ -118,12 +118,12 @@
 <li class="toctree-l2"><a class="reference internal" href="interactive.html#unknown-unknowns">Unknown Unknowns</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="xai.html">Interpretability (ML)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="xai.html#surveys">Surveys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xai.html#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xai.html#inhertantly-interpretable-models">Inhertantly Interpretable Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xai.html#post-hoc-methods">Post-hoc Methods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xai.html#visualization">Visualization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interpretability (ML)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#surveys">Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inhertantly-interpretable-models">Inhertantly Interpretable Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#post-hoc-methods">Post-hoc Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visualization">Visualization</a></li>
 </ul>
 </li>
 </ul>
@@ -179,14 +179,16 @@
     
       <li><a href="../index.html" class="icon breadcrumb-home"></a>&raquo;</li>
         
-      <li>Machine Learning</li>
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo; </li>
+        
+      <li>Interpretability (ML)</li>
 
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/fplab/ui-for-pl/blob/master/src/ml/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/fplab/ui-for-pl/blob/master/src/ml/xai.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -200,19 +202,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
+  <div class="section" id="interpretability-ml">
+<h1>Interpretability (ML)<a class="headerlink" href="#interpretability-ml" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="surveys">
+<h2>Surveys<a class="headerlink" href="#surveys" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Challenge of Crafting Intelligible Intelligence <a class="reference external" href="https://arxiv.org/pdf/1803.04263.pdf">https://arxiv.org/pdf/1803.04263.pdf</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="defining-xai-interpretabliity">
+<h2>Defining XAI/Interpretabliity<a class="headerlink" href="#defining-xai-interpretabliity" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Mythos of Model Interpretability <a class="reference external" href="https://arxiv.org/pdf/1606.03490.pdf">https://arxiv.org/pdf/1606.03490.pdf</a></p></li>
+<li><p>Towards A Rigorous Science of Interpretable Machine Learning <a class="reference external" href="https://arxiv.org/pdf/1702.08608.pdf">https://arxiv.org/pdf/1702.08608.pdf</a></p></li>
+<li><p>Explanation in Artificial Intelligence: Insights from the Social Sciences <a class="reference external" href="https://arxiv.org/pdf/1706.07269.pdf">https://arxiv.org/pdf/1706.07269.pdf</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="inhertantly-interpretable-models">
+<h2>Inhertantly Interpretable Models<a class="headerlink" href="#inhertantly-interpretable-models" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Automated Rationale Generation: A Technique forExplainable AI and its Effects on Human Perceptions <a class="reference external" href="https://arxiv.org/pdf/1901.03729.pdf">https://arxiv.org/pdf/1901.03729.pdf</a></p></li>
+<li><p>Interpretable classifiers using rules and Bayesian analysis: Building a better stroke prediction model <a class="reference external" href="https://arxiv.org/abs/1511.01644">https://arxiv.org/abs/1511.01644</a></p></li>
+<li><p>Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission <a class="reference external" href="http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf">http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="post-hoc-methods">
+<h2>Post-hoc Methods<a class="headerlink" href="#post-hoc-methods" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>LIME <a class="reference external" href="https://www.kdd.org/kdd2016/papers/files/rfp0573-ribeiroA.pdf">https://www.kdd.org/kdd2016/papers/files/rfp0573-ribeiroA.pdf</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Visualizing Higher-Layer Features of a Deep Network <a class="reference external" href="https://pdfs.semanticscholar.org/65d9/94fb778a8d9e0f632659fb33a082949a50d3.pdf">https://pdfs.semanticscholar.org/65d9/94fb778a8d9e0f632659fb33a082949a50d3.pdf</a></p></li>
+<li><p>Distill Feature visualization <a class="reference external" href="https://distill.pub/2017/feature-visualization/">https://distill.pub/2017/feature-visualization/</a></p></li>
+</ul>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
 </div>
 
 
@@ -223,10 +249,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rl.html" class="btn btn-neutral float-right" title="Reinforcement Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../hci/index.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="Knowledge Dump" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="interactive.html" class="btn btn-neutral float-left" title="Interactive Learning" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

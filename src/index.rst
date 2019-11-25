@@ -27,8 +27,9 @@ Knowledge and paper dump.
 .. toctree::
   :caption: HCI
   :hidden:
+  :maxdepth: 2
 
-  hci.rst
+  hci/index.rst
 
 .. * :ref:`genindex`
 .. * :ref:`modindex`

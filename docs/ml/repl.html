@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="../_static/style-extra.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Overview" href="../hci.html" />
+    <link rel="next" title="NLP" href="nlp.html" />
     <link rel="prev" title="Reinforcement Learning" href="rl.html" /> 
 </head>
 
@@ -75,10 +75,26 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="rl.html">Reinforcement Learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="rl.html#human-supervision">Human Supervision</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="rl.html#coach-interactive-learning-from-policy-dependent-human-feedback">COACH - Interactive learning from policy-dependent human feedback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="rl.html#tamer">TAMER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#reward-shaping">Reward Shaping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#imitation-learning">Imitation Learning</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#off-policy">Off-policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#soft-actor-critic">Soft Actor Critic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#hierarchical-reinforcement-learning">Hierarchical Reinforcement Learning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#hiro-data-efficient-hrl">(HIRO) Data efficient HRL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#intrinsic-reward">Intrinsic Reward</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#diayn-diversity-is-all-you-need">(DIAYN) diversity is all you need</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#dynamics-aware-unsupervised-discovery-of-skills">Dynamics aware unsupervised discovery of skills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#snn4rl-stochastic-neural-networks-for-hrl">(SNN4RL) Stochastic Neural Networks for HRL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rl.html#unsupervised-control-through-non-parametric-discriminative-rewards">Unsupervised Control Through Non-Parametric Discriminative Rewards</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rl.html#natural-language-in-reinforcement-learning">Natural Language in Reinforcement Learning</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Representation Learning</a><ul>
@@ -86,16 +102,38 @@
 <li class="toctree-l3"><a class="reference internal" href="#hyperspherical-variational-auto-encoders">Hyperspherical Variational Auto-Encoders</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#x-shot-learning"><em>X</em>-Shot Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#non-parametric-learning">Non-parametric Learning</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#infinite-mixture-prototypes-for-few-shot-learning">Infinite Mixture Prototypes for Few-Shot Learning</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="nlp.html">NLP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nlp.html#representations">Representations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interactive.html">Interactive Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#active-learning">Active Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#weak-supervision">Weak Supervision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#unknown-unknowns">Unknown Unknowns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xai.html">Interpretability (ML)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#surveys">Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#inhertantly-interpretable-models">Inhertantly Interpretable Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#post-hoc-methods">Post-hoc Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#visualization">Visualization</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">HCI</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hci.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hci/crowdsourcing.html">Crowdsourcing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hci/interpretability.html">Interpretability (HCI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../hci/interpretability.html#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -186,12 +224,27 @@ gaussian prior. (also uninformative prior).</p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="x-shot-learning">
-<h2><em>X</em>-Shot Learning<a class="headerlink" href="#x-shot-learning" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="non-parametric-learning">
+<h2>Non-parametric Learning<a class="headerlink" href="#non-parametric-learning" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="infinite-mixture-prototypes-for-few-shot-learning">
 <h3>Infinite Mixture Prototypes for Few-Shot Learning<a class="headerlink" href="#infinite-mixture-prototypes-for-few-shot-learning" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://arxiv.org/abs/1902.04552">https://arxiv.org/abs/1902.04552</a></p>
-<p id="bibtex-bibliography-ml/repl-0"></p>
+<ul class="simple">
+<li><p>Non-parametric methods are good at few shot learning tasks, since they
+more closely represent the data</p></li>
+<li><p>Nearest neighbors and prototypical methods (such as GMM) are two ends of
+spectrum in decision boundary complexity</p></li>
+<li><p>Infinite mixture modeling are one method of spanning the above spectrum (Bayesian nonparametrics) <a class="bibtex reference internal" href="#hjort2010bayesian" id="id1">[HHMullerW10]</a> – important for few-shot learning</p></li>
+<li><p>Intuition - recognizing single characters is straightforward - characters
+look alike, so can be recognized with a single “prototype”.
+Recognizing alphabets is trickier - unimodal distribution assumption is violated</p></li>
+</ul>
+<p id="bibtex-bibliography-ml/repl-0"><dl class="citation">
+<dt class="bibtex label" id="hjort2010bayesian"><span class="brackets"><a class="fn-backref" href="#id1">HHMullerW10</a></span></dt>
+<dd><p>Nils Lid Hjort, Chris Holmes, Peter Müller, and Stephen G Walker. <em>Bayesian nonparametrics</em>. Volume 28. Cambridge University Press, 2010.</p>
+</dd>
+</dl>
+</p>
 </div>
 </div>
 </div>
@@ -204,7 +257,7 @@ gaussian prior. (also uninformative prior).</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../hci.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="nlp.html" class="btn btn-neutral float-right" title="NLP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="rl.html" class="btn btn-neutral float-left" title="Reinforcement Learning" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

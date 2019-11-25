@@ -75,16 +75,25 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Reinforcement Learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#human-supervision">Human Supervision</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#coach-interactive-learning-from-policy-dependent-human-feedback">COACH - Interactive learning from policy-dependent human feedback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tamer">TAMER</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reward-shaping">Reward Shaping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#imitation-learning">Imitation Learning</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#off-policy">Off-policy</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#soft-actor-critic">Soft Actor Critic</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#hierarchical-reinforcement-learning">Hierarchical Reinforcement Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#intrinsic-reward">Intrinsic Reward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hierarchical-reinforcement-learning">Hierarchical Reinforcement Learning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hiro-data-efficient-hrl">(HIRO) Data efficient HRL</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#intrinsic-reward">Intrinsic Reward</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#diayn-diversity-is-all-you-need">(DIAYN) diversity is all you need</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamics-aware-unsupervised-discovery-of-skills">Dynamics aware unsupervised discovery of skills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#snn4rl-stochastic-neural-networks-for-hrl">(SNN4RL) Stochastic Neural Networks for HRL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unsupervised-control-through-non-parametric-discriminative-rewards">Unsupervised Control Through Non-Parametric Discriminative Rewards</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#natural-language-in-reinforcement-learning">Natural Language in Reinforcement Learning</a></li>
 </ul>
 </li>
@@ -93,16 +102,38 @@
 <li class="toctree-l3"><a class="reference internal" href="repl.html#hyperspherical-variational-auto-encoders">Hyperspherical Variational Auto-Encoders</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="repl.html#x-shot-learning"><em>X</em>-Shot Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="repl.html#non-parametric-learning">Non-parametric Learning</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="repl.html#infinite-mixture-prototypes-for-few-shot-learning">Infinite Mixture Prototypes for Few-Shot Learning</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="nlp.html">NLP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nlp.html#representations">Representations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interactive.html">Interactive Learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#active-learning">Active Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#weak-supervision">Weak Supervision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html#unknown-unknowns">Unknown Unknowns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xai.html">Interpretability (ML)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#surveys">Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#inhertantly-interpretable-models">Inhertantly Interpretable Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#post-hoc-methods">Post-hoc Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xai.html#visualization">Visualization</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">HCI</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../hci.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hci/crowdsourcing.html">Crowdsourcing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hci/interpretability.html">Interpretability (HCI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../hci/interpretability.html#defining-xai-interpretabliity">Defining XAI/Interpretabliity</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -175,23 +206,33 @@
 <h1>Reinforcement Learning<a class="headerlink" href="#reinforcement-learning" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="human-supervision">
 <h2>Human Supervision<a class="headerlink" href="#human-supervision" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="coach-interactive-learning-from-policy-dependent-human-feedback">
-<h3>COACH - Interactive learning from policy-dependent human feedback<a class="headerlink" href="#coach-interactive-learning-from-policy-dependent-human-feedback" title="Permalink to this headline">¶</a></h3>
-<p><a class="bibtex reference internal" href="#macglashan2017interactive" id="id1">[MHL+17]</a>
-<a class="reference external" href="https://arxiv.org/abs/1701.06049">https://arxiv.org/abs/1701.06049</a></p>
+<div class="section" id="reward-shaping">
+<h3>Reward Shaping<a class="headerlink" href="#reward-shaping" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>COACH - Interactive learning from policy-dependent human feedback <a class="bibtex reference internal" href="#macglashan2017interactive" id="id1">[MHL+17]</a> <a class="reference external" href="https://arxiv.org/abs/1701.06049">https://arxiv.org/abs/1701.06049</a></p></li>
+<li><p>TAMER - <a class="bibtex reference internal" href="#warnell2018deep" id="id2">[WWLS18]</a> <a class="reference external" href="https://arxiv.org/abs/1709.10163">https://arxiv.org/abs/1709.10163</a></p></li>
+<li><p>End2end robotic RL without reward engineering <a class="reference external" href="https://arxiv.org/abs/1904.07854">https://arxiv.org/abs/1904.07854</a></p></li>
+<li><p>Learning from human preferences <a class="reference external" href="https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/">https://openai.com/blog/deep-reinforcement-learning-from-human-preferences/</a></p></li>
+</ul>
 </div>
-<div class="section" id="tamer">
-<h3>TAMER<a class="headerlink" href="#tamer" title="Permalink to this headline">¶</a></h3>
-<p><a class="bibtex reference internal" href="#warnell2018deep" id="id2">[WWLS18]</a>
-<a class="reference external" href="https://arxiv.org/abs/1709.10163">https://arxiv.org/abs/1709.10163</a></p>
+<div class="section" id="imitation-learning">
+<h3>Imitation Learning<a class="headerlink" href="#imitation-learning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Hierarchical Imitation and Reinforcement Learning <a class="reference external" href="https://arxiv.org/pdf/1803.00590.pdf">https://arxiv.org/pdf/1803.00590.pdf</a></p></li>
+<li><p>Imitation learning tutorial ICML 2018 <a class="reference external" href="https://sites.google.com/view/icml2018-imitation-learning/">https://sites.google.com/view/icml2018-imitation-learning/</a></p></li>
+<li><p>Third-Person Visual Imitation Learning viaDecoupled Hierarchical Controller <a class="reference external" href="https://pathak22.github.io/hierarchical-imitation/">https://pathak22.github.io/hierarchical-imitation/</a></p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="off-policy">
 <h2>Off-policy<a class="headerlink" href="#off-policy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Soft Actor Critic <a class="bibtex reference internal" href="#haarnoja2018soft" id="id3">[HZAL18]</a> <a class="reference external" href="https://arxiv.org/pdf/1801.01290.pdf">https://arxiv.org/pdf/1801.01290.pdf</a></p></li>
+</ul>
 <div class="section" id="soft-actor-critic">
 <h3>Soft Actor Critic<a class="headerlink" href="#soft-actor-critic" title="Permalink to this headline">¶</a></h3>
-<p><a class="bibtex reference internal" href="#haarnoja2018soft" id="id3">[HZAL18]</a>
-<a class="reference external" href="https://arxiv.org/pdf/1801.01290.pd">https://arxiv.org/pdf/1801.01290.pd</a></p>
+<p><a class="bibtex reference internal" href="#haarnoja2018soft" id="id4">[HZAL18]</a>
+<a class="reference external" href="https://arxiv.org/pdf/1801.01290.pdf">https://arxiv.org/pdf/1801.01290.pdf</a></p>
 <div class="math notranslate nohighlight" id="equation-max-ent-rl">
 <span class="eqno">(1)<a class="headerlink" href="#equation-max-ent-rl" title="Permalink to this equation">¶</a></span>\[J(\pi) = \sum_{t=0}^T \mathbb{E}_{(s, a) \sim \rho_\pi} [r_t(s_t, a_t) + \alpha \mathcal{H}(\pi( \cdot | s_t))]\]</div>
 <ul class="simple">
@@ -201,18 +242,123 @@
 </div>
 <div class="section" id="hierarchical-reinforcement-learning">
 <h2>Hierarchical Reinforcement Learning<a class="headerlink" href="#hierarchical-reinforcement-learning" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><ol class="arabic simple" start="2002">
+<li><p>Learning Options in Reinforcement Learning <a class="reference external" href="https://arxiv.org/abs/1805.08296">https://arxiv.org/abs/1805.08296</a></p></li>
+</ol>
+</li>
+<li><p>Option Critic Architecture <a class="reference external" href="https://arxiv.org/pdf/1609.05140.pdf">https://arxiv.org/pdf/1609.05140.pdf</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Uses policy gradient methods in options learning</p></li>
+<li><p>Passes gradients through high level policy and option policies</p></li>
+<li><p>Need termination for each function</p></li>
+<li><p>(From efficient HRL - prone to learning options that terminate after one step)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>(HIRO) Data efficient HRL <a class="reference external" href="https://arxiv.org/abs/1805.08296">https://arxiv.org/abs/1805.08296</a></p></li>
+</ul>
+<div class="section" id="hiro-data-efficient-hrl">
+<h3>(HIRO) Data efficient HRL<a class="headerlink" href="#hiro-data-efficient-hrl" title="Permalink to this headline">¶</a></h3>
+<p><a class="bibtex reference internal" href="#nachum2018data" id="id5">[NGLL18]</a>
+<a class="reference external" href="https://arxiv.org/abs/1805.08296">https://arxiv.org/abs/1805.08296</a></p>
+<ul>
+<li><p>Off policy training for high/low level policy</p></li>
+<li><p>Parameterized goals and rewards</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>High level policy produces goals g_t</p></li>
+<li><p><span class="math notranslate nohighlight">\(g_t\)</span> directs low level policy to try to reach state <span class="math notranslate nohighlight">\(s_t + g_t\)</span>, from <span class="math notranslate nohighlight">\(s_t\)</span></p></li>
+<li><p>(Natural setting - position of agent in grid)</p></li>
+<li><p>Intrinsic reward = <span class="math notranslate nohighlight">\(-||s_t + g_t - s_{t+1}||\)</span></p></li>
+<li><p>Many prior works generally require some on-policy training, as changing behavior of lower level policy changes how high level behaves</p></li>
+<li><p>HIRO takes correction (makes true goal more likely to happen)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
 </div>
 <div class="section" id="intrinsic-reward">
 <h2>Intrinsic Reward<a class="headerlink" href="#intrinsic-reward" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>(VIC) variational intrinsic control <a class="reference external" href="https://arxiv.org/pdf/1611.07507.pdf">https://arxiv.org/pdf/1611.07507.pdf</a></p></li>
+<li><p>(DIAYN) diversity is all you need <a class="reference external" href="https://arxiv.org/abs/1802.06070">https://arxiv.org/abs/1802.06070</a></p></li>
+<li><p>(SNN4RL) Stochastic Neural Networks for HRL <a class="reference external" href="https://github.com/florensacc/snn4hrl">https://github.com/florensacc/snn4hrl</a></p></li>
+<li><p>Dynamics aware unsupervised discovery of skills <a class="reference external" href="https://arxiv.org/pdf/1907.01657.pdf">https://arxiv.org/pdf/1907.01657.pdf</a></p></li>
+<li><p>Unsupervised Control Through Non-Parametric Discriminative Rewards <a class="reference external" href="https://arxiv.org/pdf/1811.11359.pdf">https://arxiv.org/pdf/1811.11359.pdf</a></p></li>
+</ul>
+<div class="section" id="diayn-diversity-is-all-you-need">
+<h3>(DIAYN) diversity is all you need<a class="headerlink" href="#diayn-diversity-is-all-you-need" title="Permalink to this headline">¶</a></h3>
+<p><a class="bibtex reference internal" href="#eysenbach2018diversity" id="id6">[EGIL18]</a>
+<a class="reference external" href="https://arxiv.org/abs/1802.06070">https://arxiv.org/abs/1802.06070</a></p>
+<ul class="simple">
+<li><p>No reward, only diversity</p></li>
+<li><p>Distinguish skill from state only</p></li>
+</ul>
+</div>
+<div class="section" id="dynamics-aware-unsupervised-discovery-of-skills">
+<h3>Dynamics aware unsupervised discovery of skills<a class="headerlink" href="#dynamics-aware-unsupervised-discovery-of-skills" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://arxiv.org/pdf/1907.01657.pdf">https://arxiv.org/pdf/1907.01657.pdf</a>
+<a class="bibtex reference internal" href="#sharma2019dynamics" id="id7">[SGL+19]</a></p>
+<ul class="simple">
+<li><p>Like DIAYN</p></li>
+<li><p>Distinguish skill from state and predictability of next state (dynamics)</p></li>
+</ul>
+</div>
+<div class="section" id="snn4rl-stochastic-neural-networks-for-hrl">
+<h3>(SNN4RL) Stochastic Neural Networks for HRL<a class="headerlink" href="#snn4rl-stochastic-neural-networks-for-hrl" title="Permalink to this headline">¶</a></h3>
+<p><a class="bibtex reference internal" href="#florensa2017stochastic" id="id8">[FDA17]</a>
+<a class="reference external" href="https://github.com/florensacc/snn4hrl">https://github.com/florensacc/snn4hrl</a></p>
+<ul class="simple">
+<li><p>Learning skills under a single task reward that generalizes to other skills</p></li>
+</ul>
+</div>
+<div class="section" id="unsupervised-control-through-non-parametric-discriminative-rewards">
+<h3>Unsupervised Control Through Non-Parametric Discriminative Rewards<a class="headerlink" href="#unsupervised-control-through-non-parametric-discriminative-rewards" title="Permalink to this headline">¶</a></h3>
+<p><a class="bibtex reference internal" href="#warde2018unsupervised" id="id9">[WFVdWK+18]</a>
+<a class="reference external" href="https://arxiv.org/pdf/1811.11359.pdf">https://arxiv.org/pdf/1811.11359.pdf</a></p>
+<ul>
+<li><p>Model free architecture - learn a goal state conditioned policy:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi_\theta (a | s; s_g)\)</span> - reach any state <span class="math notranslate nohighlight">\(s_g\)</span> from <span class="math notranslate nohighlight">\(s\)</span></p></li>
+<li><p>Goal achievement reward <span class="math notranslate nohighlight">\(r(s, s_g)\)</span> measures how similar <span class="math notranslate nohighlight">\(s\)</span> and <span class="math notranslate nohighlight">\(s_g\)</span> are using mutual information</p></li>
+<li><p>Is able to deal with states out of reach</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
 </div>
 <div class="section" id="natural-language-in-reinforcement-learning">
 <h2>Natural Language in Reinforcement Learning<a class="headerlink" href="#natural-language-in-reinforcement-learning" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A Survey of Reinforcement Learning Informed by Natural Language <a class="reference external" href="https://arxiv.org/pdf/1906.03926.pdf">https://arxiv.org/pdf/1906.03926.pdf</a></p></li>
+<li><p>Language as an Abstraction for Hierarchical Deep Reinforcement Learning <a class="reference external" href="https://arxiv.org/pdf/1906.07343.pdf">https://arxiv.org/pdf/1906.07343.pdf</a></p></li>
+</ul>
 <p id="bibtex-bibliography-ml/rl-0"><dl class="citation">
-<dt class="bibtex label" id="haarnoja2018soft"><span class="brackets"><a class="fn-backref" href="#id3">HZAL18</a></span></dt>
+<dt class="bibtex label" id="eysenbach2018diversity"><span class="brackets"><a class="fn-backref" href="#id6">EGIL18</a></span></dt>
+<dd><p>Benjamin Eysenbach, Abhishek Gupta, Julian Ibarz, and Sergey Levine. Diversity is all you need: learning skills without a reward function. <em>arXiv preprint arXiv:1802.06070</em>, 2018.</p>
+</dd>
+<dt class="bibtex label" id="florensa2017stochastic"><span class="brackets"><a class="fn-backref" href="#id8">FDA17</a></span></dt>
+<dd><p>Carlos Florensa, Yan Duan, and Pieter Abbeel. Stochastic neural networks for hierarchical reinforcement learning. <em>arXiv preprint arXiv:1704.03012</em>, 2017.</p>
+</dd>
+<dt class="bibtex label" id="haarnoja2018soft"><span class="brackets">HZAL18</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id4">2</a>)</span></dt>
 <dd><p>Tuomas Haarnoja, Aurick Zhou, Pieter Abbeel, and Sergey Levine. Soft actor-critic: off-policy maximum entropy deep reinforcement learning with a stochastic actor. <em>arXiv preprint arXiv:1801.01290</em>, 2018.</p>
 </dd>
 <dt class="bibtex label" id="macglashan2017interactive"><span class="brackets"><a class="fn-backref" href="#id1">MHL+17</a></span></dt>
 <dd><p>James MacGlashan, Mark K Ho, Robert Loftin, Bei Peng, Guan Wang, David L Roberts, Matthew E Taylor, and Michael L Littman. Interactive learning from policy-dependent human feedback. In <em>Proceedings of the 34th International Conference on Machine Learning-Volume 70</em>, 2285–2294. JMLR. org, 2017.</p>
+</dd>
+<dt class="bibtex label" id="nachum2018data"><span class="brackets"><a class="fn-backref" href="#id5">NGLL18</a></span></dt>
+<dd><p>Ofir Nachum, Shixiang Shane Gu, Honglak Lee, and Sergey Levine. Data-efficient hierarchical reinforcement learning. In <em>Advances in Neural Information Processing Systems</em>, 3303–3313. 2018.</p>
+</dd>
+<dt class="bibtex label" id="sharma2019dynamics"><span class="brackets"><a class="fn-backref" href="#id7">SGL+19</a></span></dt>
+<dd><p>Archit Sharma, Shixiang Gu, Sergey Levine, Vikash Kumar, and Karol Hausman. Dynamics-aware unsupervised discovery of skills. <em>arXiv preprint arXiv:1907.01657</em>, 2019.</p>
+</dd>
+<dt class="bibtex label" id="warde2018unsupervised"><span class="brackets"><a class="fn-backref" href="#id9">WFVdWK+18</a></span></dt>
+<dd><p>David Warde-Farley, Tom Van de Wiele, Tejas Kulkarni, Catalin Ionescu, Steven Hansen, and Volodymyr Mnih. Unsupervised control through non-parametric discriminative rewards. <em>arXiv preprint arXiv:1811.11359</em>, 2018.</p>
 </dd>
 <dt class="bibtex label" id="warnell2018deep"><span class="brackets"><a class="fn-backref" href="#id2">WWLS18</a></span></dt>
 <dd><p>Garrett Warnell, Nicholas Waytowich, Vernon Lawhern, and Peter Stone. Deep tamer: interactive agent shaping in high-dimensional state spaces. In <em>Thirty-Second AAAI Conference on Artificial Intelligence</em>. 2018.</p>
