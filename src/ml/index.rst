@@ -8,7 +8,6 @@
 
 .. toctree::
   :caption: RL
-  :hidden:
 
   rl.rst
 
@@ -20,7 +19,6 @@
 
 .. toctree::
   :caption: RepL
-  :hidden:
 
   repl.rst
 
@@ -30,7 +28,6 @@
 
 .. toctree::
   :caption: NLP
-  :hidden:
 
   nlp.rst
 
@@ -40,7 +37,6 @@
 
 .. toctree::
   :caption: InterL
-  :hidden:
 
   interactive.rst
 
@@ -50,7 +46,6 @@
 
 .. toctree::
   :caption: XAI
-  :hidden:
 
   xai.rst
 

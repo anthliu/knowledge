@@ -1,9 +1,11 @@
 .. You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==========================================
+.. title:: papers
+
+==============
 Knowledge Dump
-==========================================
+==============
 
 Knowledge and paper dump.
 
@@ -15,7 +17,6 @@ Knowledge and paper dump.
 
 .. toctree::
   :caption: Machine Learning
-  :hidden:
   :maxdepth: 2
 
   ml/index.rst
@@ -26,7 +27,6 @@ Knowledge and paper dump.
 
 .. toctree::
   :caption: HCI
-  :hidden:
   :maxdepth: 2
 
   hci/index.rst

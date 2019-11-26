@@ -8,7 +8,6 @@
 
 .. toctree::
   :caption: Cro
-  :hidden:
 
   crowdsourcing.rst
 
@@ -18,7 +17,6 @@
 
 .. toctree::
   :caption: interp
-  :hidden:
 
   interpretability.rst
 
